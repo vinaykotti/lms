@@ -1,0 +1,69 @@
+
+
+.loginbody
+{
+background-image: url('imgandico/login_BG.png'), linear-gradient(to bottom, rgba(240, 195, 122, 0.8), rgba(243, 195, 122, 0.6), rgba(246, 204, 141, 0.4), rgba(249, 204, 141, 0.2), rgba(252, 236, 211, 0));
+
+background-size: 100%;
+
+
+font-family: Arial, Helvetica, sans-serif;
+overflow-y: hidden;
+background-repeat: no-repeat;
+}
+
+.loginform
+{
+background-size: 100% 100%;
+border: 3px solid #156082;
+color: #0a5877;
+width: 30%;
+margin-top: 40vh;
+margin-left: 35vw;
+}
+
+.login_input
+{
+width: 100%;
+padding: 12px 10px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #000;
+box-sizing: border-box;
+}
+
+.login_container
+{
+padding: 5px;
+vertical-align: middle;
+padding: 10px 10px;
+background-color: transparent;
+} 
+
+.error { 
+ color: #a94442; 
+ }
+ nav {
+  background-color: #156082;
+  color: aliceblue;
+  text-align: center;
+  padding: 15px;
+  font-size: 17pt;
+  
+ }
+ .buttondiv {
+  width:100%;
+  display: flex;
+  justify-content: center;
+ }
+ .submitbutton {
+  width: 30%;
+  border:none;
+  background-color: #156082;
+  padding: 8px;
+  font-size: 12pt;
+  color: aliceblue;
+  border-radius: 20px;
+  margin: 5px 0px 12px 0px;
+
+ }

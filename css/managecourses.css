@@ -1,0 +1,196 @@
+body {
+  background-color: transparent; /* Light blue background */
+}
+
+.container {
+  max-width: 98%;
+  background: rgba(255, 255, 255);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  margin-bottom: 20px;
+  background-color: #007bff; /* Navbar color */
+}
+.navbar a {
+  color: white !important; /* Navbar link color */
+}
+.table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s; /* Animation for table */
+}
+.table tr:hover {
+  background-color: #e9ecef; /* Light gray on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+.btn-custom {
+  background-color: #6c757d; /* Updated to match users.php */
+  text-align: left;
+  color: white;
+  border: none;
+  height: 40px;
+  margin-bottom: 5px;
+  padding: 4px 15px; /* Reduced padding for smaller buttons */
+  cursor: pointer; /* Added cursor style */
+  border-radius: 50px; /* Pill-shaped buttons */
+  transition: background-color 0.3s, transform 0.2s; /* Updated transition */
+  font-size: 14px; /* Reduced font size for smaller buttons */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+.btn-custom:hover {
+  background-color: #5a6268; /* Updated hover color */
+  transform: scale(1.05); /* Added hover effect */
+}
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  animation: fadeIn 0.5s; /* Fade-in animation for messages */
+}
+.success {
+  background-color: #d4edda; /* Light green for success */
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+.error {
+  background-color: #f8d7da; /* Light red for error */
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Add this new style for the course table */
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: #ffffe0; /* Light yellow background */
+  border-color: brown; /* Brown border color */
+}
+
+.course-table th,
+.course-table td,
+.course-table {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.course-table th,
+.course-table {
+  background-color: #a0c4ff; /* Header color */
+  color: #333;
+  font-weight: bold;
+}
+
+.course-table tr:hover {
+  background-color: #f1f1f1; /* Light gray on hover */
+}
+
+.btn-update-pdf {
+  background-color: #4da6ff; /* Light blue background for PDF update */
+  color: white;
+  border: none;
+  padding: 3px 8px; /* Reduced padding for smaller button */
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 10px; /* Reduced font size for smaller button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.btn-update-pdf:hover {
+  background-color: #b3d7ff; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.btn-add-video {
+  background-color: #66cc66; /* Light green background for video add */
+  color: white;
+  border: none;
+  padding: 3px 8px; /* Reduced padding for smaller button */
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 10px; /* Reduced font size for smaller button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.btn-add-video:hover {
+  background-color: #c2f0c2; /* Darker green on hover */
+  transform: scale(1.05);
+}
+
+.btn-add-zip {
+  background-color: #ffcc66; /* Light yellow background for ZIP add */
+  color: white;
+  border: none;
+  padding: 3px 8px; /* Reduced padding for smaller button */
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 10px; /* Reduced font size for smaller button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.btn-add-zip:hover {
+  background-color: #ffe6b3; /* Darker yellow on hover */
+  transform: scale(1.05);
+}
+
+.btn-update-access {
+  background-color: #007bff; /* Blue background for Update Access */
+  color: white;
+  border: none;
+  padding: 10px 10px; /* Reduced padding for a smaller button */
+  cursor: pointer;
+  border-radius: 50px; /* Pill-shaped button */
+  transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+  font-size: 12px; /* Reduced font size for a smaller button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+.btn-update-access:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Custom scrollbar styles */
+.course-table::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+.course-table::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+.course-table::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* Style for circular checkboxes */
+input[type="checkbox"] {
+  -webkit-appearance: none; /* Remove default checkbox styling */
+  width: 20px; /* Width of the checkbox */
+  height: 20px; /* Height of the checkbox */
+  border-radius: 50%; /* Make it circular */
+  border: 2px solid #007bff; /* Border color */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+input[type="checkbox"]:checked {
+  background-color: rgb(
+    255,
+    0,
+    0
+  ); /* Change this to your desired checked color */
+  border: 2px solidrgb(255, 0, 0); /* Border color when checked */
+}
+.course-row {
+  display: flex;
+}

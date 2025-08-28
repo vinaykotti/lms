@@ -1,0 +1,153 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+	overflow: hidden;
+}
+
+h1{
+    font-size:20px;
+    
+}
+
+@media print {
+    body {
+        visibility: hidden; /* Hide everything in the body */
+    }
+
+    #code-overlay {
+        visibility: visible; /* Ensure the access code overlay is visible */
+    }
+}
+
+#pdf-interface {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+	
+}
+
+#toolbar {
+    width: 30%;
+    margin-bottom: 15px;
+    display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 0px 0px 15px;
+    gap: 8px;
+}
+
+#toolbar button {
+    padding: 5px 10px;
+	width: 8vw;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#toolbar button:hover {
+    background-color: #0056b3;
+}
+
+#toolbar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	width: 7.3vw;
+}
+
+
+#pdf-container {
+    width: 100%;
+    overflow-y: auto;
+    height: 100vh;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+}
+
+ #fileDropdown {
+            display: none; /* Hide the dropdown by default */
+        }
+		
+#videoModal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1000;
+            width: 80%;
+            max-width: 800px;
+        }
+        #videoModal video {
+            width: 100%;
+            height: auto;
+        }
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+		#bookoverlay {
+            position: fixed;
+			top:1.5%;
+			right:2%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+		#pageoverlay {
+            position: fixed;
+			bottom:1.5%;
+			right:2%;
+            z-index: 999;
+        }
+        #closeModal {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+		
+		#bookmarks {
+            width: 20vw;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: #f7f7f7;
+            border-left: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .bookmark {
+            margin: 5px 0;
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }

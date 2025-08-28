@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+@media print {
+  body {
+    visibility: hidden; /* Hide everything in the body */
+  }
+
+  #code-overlay {
+    visibility: visible; /* Ensure the access code overlay is visible */
+  }
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+table {
+  width: 50%; /* Or a specific pixel value */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  top: 20vh;
+}
+
+.button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.button-m {
+  background: linear-gradient(to bottom, #f47c31, #d95b11);
+  border: none;
+  border-radius: 1px;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+  height: 150px;
+  width: 150px;
+}
+
+.button-m:hover {
+  background: linear-gradient(to bottom, #d95b11, #b9440a);
+}
