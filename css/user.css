@@ -4,11 +4,6 @@ h1 {
 	font-size: 20px;
 }
 
-#main {
-	transition: margin-left .5s;
-	padding: 16px;
-}
-
 
 
 .w3-wide {
@@ -21,7 +16,7 @@ h1 {
 	line-height: 2;
 	text-align: center;
 	font-family: "Segoe UI", Arial, sans-serif;
-	margin-top: 25px;
+	margin-top: 2px;
 }
 
 #triangle-right {

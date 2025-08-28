@@ -24,7 +24,7 @@
     <div id="dropdown" class="dropdown-content">
         <a href="homepage.php"><i class="icon">🏠</i> Home</a>
       <a href="dashboard.php"><i class="icon">📊</i> Dashboard</a>
-      <a href="changepassword.php"><i class="icon">🔒</i> Change Password</a>
+      <a href="changepass.php"><i class="icon">🔒</i> Change Password</a>
       <a href="logout.php"><i class="icon">⏻</i> Logout</a>
     </div>
   </div>

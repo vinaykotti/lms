@@ -58,10 +58,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Change Password</title>
-    <link rel="stylesheet" href="css/user.css">
     <link rel="stylesheet" href="css/changepassword.css">
+        <link rel="stylesheet" href="css/user.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body style="margin:0px;">
+    <?php include "header.php"; ?>
     <h2>Change your Password</h2>
     <?php if (isset($_SESSION['error'])): ?>
         <div class="message error">
@@ -83,6 +85,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <br>
         <button type="submit">Change Password</button>
     </form>
-    <a href="users.php">Cancel</a>
+    <a href="homepage.php">Cancel</a>
 </body>
 </html>

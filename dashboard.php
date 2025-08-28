@@ -44,12 +44,24 @@ if(!$_SESSION['username'])
 		$role=$row1['Role'];}
         if($role=='Admin' || $role=='Superuser'){					
     ?>
-    <a  href="users.php" target="contentFrame" >Manage Users</a>
+    <a  href="register.php" target="contentFrame" >Create Users</a>
     <?php }
 			else
 				{ ?>
 				<?php }
 				?>
+	<?php
+	$query=mysqli_query($db, "select * from user_info where User_Name='".$_SESSION['username']."'");
+	    while($row1=mysqli_fetch_array($query)){
+		$role=$row1['Role'];}
+        if($role=='Admin' || $role=='Superuser'){					
+    ?>
+    <a  href="users.php" target="contentFrame" >Manage Users</a>
+    <?php }
+			else
+				{ ?>
+				<?php }
+				?>			
     
 </div>
 <div class="content">

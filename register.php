@@ -95,7 +95,6 @@ form, .content {
 </Style>
 </head>
 <body>
-<img src="imgandico/banner1.png" height= "10%" width="100%" >
   <div class="header">
   	<h2>Create a new account</h2>
   </div>
@@ -149,9 +148,6 @@ form, .content {
   	<div class="input-group">
   	  <button type="submit" class="btn" name="reg_user">Submit</button>
   	</div>
-  	<p>
-  		Have an account already? <a href="users.php"> Log In</a>
-  	</p>
   </form>
 </body>
 </html>
